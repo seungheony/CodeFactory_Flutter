@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           color: Colors.black,
           // MedeiaQuery.of로 size를 가져올 수 있다.
-          height: MediaQuery.of(context).size.height,
+          // height: MediaQuery.of(context).size.height,
           child: Row(
             // MainAxisAlignment: 주축 정렬
             // start - 시작
@@ -22,11 +22,15 @@ class HomeScreen extends StatelessWidget {
             // spaceAround - spaceEvenly + 끝과 끝의 간격은 1/2
             mainAxisAlignment: MainAxisAlignment.start,
             // CrossAxisAlignment - 반대축 정렬
-            crossAxisAlignment: CrossAxisAlignment.end,
             // start - 시작
             // end - 끝
             // center - 중앙
             // stretch - 하드코딩한 width와 상관 없이 최대한으로 늘린다.
+            crossAxisAlignment: CrossAxisAlignment.end,
+            // MainAxisSize - 주축 크기
+            // max - 최대
+            // min - 최소
+            mainAxisSize: MainAxisSize.min,
             children: [
               Container(
                 color: Colors.red,
